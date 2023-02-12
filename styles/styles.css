@@ -1,9 +1,91 @@
-/* *{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}*/
+}
 
 html {
     font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.header,
+.footer {
+    background-color: #1f2937;
+}
+
+.header,
+.branding, 
+.hero {
+    display: flex;
+}
+
+.header {
+    flex-direction: column;
+    padding: 10px 80px 30px;
+}
+
+.branding {
+    justify-content: space-between;
+    margin: 20px 0 100px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-links a,
+.hero-left p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/*.hero {
+    background-color: saddlebrown;
+}*/
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+/*.hero-right {
+    align-self: center;
+    display: contents;
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    /*background-repeat: no-repeat;
+    background-size: contain;
+    /**flex-shrink: 0;
+}*/
+
+.hero-right {
+    align-self: center;
+}
+
+.hero-pic {
+}
+
+.hero-pic img {
+    width: 100%;
+    height: auto;
+    /*object-fit: contain;
+    aspect-ratio: 2/1;*/
 }
